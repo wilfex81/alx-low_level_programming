@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <unistd.h>
+#include "holberton.h"
+
 
 /**
 *putchar to print the characters given
@@ -10,12 +12,12 @@
 */
 int putchar(char c)
 {
-	write(1, &c, 8);
-	return(0);
+        write(1, &c, 8);
+        return(0);
 }
 
 int main(void)
 {
-	putchar("_putchar\n");
-	return (0);
+        putchar("_putchar\n");
+        return (0);
 }
