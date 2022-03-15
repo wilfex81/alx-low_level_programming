@@ -1,20 +1,21 @@
-#include "alx.h"
+#include <stdio.h>
+#include <unistd.h>
+
 /**
- * main -Prints _putchar as a message.
- *
- * Return: Always 0 (Success)
- */
+*putchar to print the characters given
+* main -Putchar
+*char c -the characters given
+* Return: Always 0 (Success)
+
+*/
+int putchar(char c)
+{
+	write(1, &c, 8);
+	return(0);
+}
 
 int main(void)
 {
-	int str[] = {45, 112, 117, 116, 99, 104, 97, 114};
-	int count, size;
-	
-	size = sizeof(str) / sizeof(int);
-	for (count = 0; count < size; count++)
-	{
-		_putchar(str[count]);
-	}
-	_putchar('\n');
+	putchar("_putchar\n");
 	return (0);
 }
