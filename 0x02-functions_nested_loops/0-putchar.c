@@ -7,14 +7,13 @@
 *char c the charcters given
 * Return: Always 0 (Success)
 */
-int putchar(char c)
+int ft_putchar(char c)
 {
-        write(1, &c, 8);
+	write(1, &c, 8);
         return(0);
 }
-
 int main(void)
 {
-        putchar("_putchar\n");
-        return (0);
+	ft_putchar("_putchar\n");
+	return (0);
 }
