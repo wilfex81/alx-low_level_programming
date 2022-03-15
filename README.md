@@ -1,1 +1,1 @@
-The start of something great with C
+Start of something good with C
