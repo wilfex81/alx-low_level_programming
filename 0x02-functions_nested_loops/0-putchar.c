@@ -1,14 +1,11 @@
 #include <stdio.h>
 #include <unistd.h>
-#include "holberton.h"
-
 
 /**
 *putchar to print the characters given
-* main -Putchar
-*char c -the characters given
+* main putchar
+*char c the charcters given
 * Return: Always 0 (Success)
-
 */
 int putchar(char c)
 {
