@@ -1,17 +1,17 @@
 #include "main.h"
 /**
- * _memset - fills memory with a constant byte,
- * @s: memory area.
- * @b: constant byte.
- * @n: bytes filled.
- * Return: the pointer to dest.
+ * _isupper - checks if parameter is an uppercase character.
+ * @c: input character.
+ * Return: 1 if is an uppercase character, 0 in other case.
  */
-char *_memset(char *s, char b, unsigned int n)
+int _isupper(int c)
 {
-	unsigned int i;
-
-	for (i = 0; i < n; i++)
-		*(s + i) =  b;
-
-	return (s);
+	if (c >= 65 && c <= 90)
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }
